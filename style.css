@@ -1,0 +1,238 @@
+/* ---------- Global Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f8f8; /* lighter background */
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+header {
+  background-color: #000;
+  color: #f1c40f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #f1c40f;
+}
+
+header .logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #f1c40f;
+}
+
+/* ---------- Common Page Layout ---------- */
+main {
+  padding: 60px 8%;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h1, h2, h3 {
+  color: #000;
+}
+
+/* ---------- Home Page ---------- */
+.hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero h1 {
+  font-size: 2.8em;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: #444;
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.quick-order {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.quick-order button {
+  background-color: #f1c40f;
+  border: none;
+  color: #000;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.quick-order button:hover {
+  background-color: #000;
+  color: #f1c40f;
+}
+
+/* ---------- Highlights Section ---------- */
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.highlight-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(241, 196, 15, 0.3);
+}
+
+.highlight-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* ---------- Menu Page ---------- */
+.menu-page h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.menu-category {
+  margin-bottom: 60px;
+}
+
+.menu-category h2 {
+  border-left: 5px solid #f1c40f;
+  padding-left: 10px;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.menu-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 12px rgba(241, 196, 15, 0.3);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.menu-item h3 {
+  font-size: 1.2em;
+  margin: 10px 0 5px;
+}
+
+.menu-item p {
+  font-size: 1em;
+  color: #f1c40f;
+  margin-bottom: 10px;
+}
+
+.menu-item button {
+  background-color: #f1c40f;
+  border: none;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.menu-item button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 0.9em;
+  border-top: 2px solid #f1c40f;
+  margin-top: 60px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  main {
+    padding: 40px 5%;
+  }
+}

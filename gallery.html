@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Eatopia</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .gallery-container {
+      position: relative;
+      overflow: hidden;
+      width: 90%;
+      margin: 50px auto;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    }
+
+    .gallery-slide {
+      display: flex;
+      width: 500%;
+      animation: slide 25s infinite linear;
+    }
+
+    .gallery-slide img {
+      width: 20%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0%); }
+      20% { transform: translateX(0%); }
+      25% { transform: translateX(-20%); }
+      45% { transform: translateX(-20%); }
+      50% { transform: translateX(-40%); }
+      70% { transform: translateX(-40%); }
+      75% { transform: translateX(-60%); }
+      95% { transform: translateX(-60%); }
+      100% { transform: translateX(-80%); }
+    }
+
+    .gallery-caption {
+      text-align: center;
+      font-size: 1.1em;
+      color: #444;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Eatopia</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="offers.html">Offers</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Eatopia Gallery</h1>
+      <p>Take a glimpse into our world — delicious dishes, passionate chefs, and moments from the kitchen.</p>
+    </section>
+
+    <div class="gallery-container">
+      <div class="gallery-slide">
+        <img src="images/gallery1.jpg" alt="Gallery Image 1">
+        <img src="images/gallery2.jpg" alt="Gallery Image 2">
+        <img src="images/gallery3.jpg" alt="Gallery Image 3">
+        <img src="images/gallery4.jpg" alt="Gallery Image 4">
+        <img src="images/gallery5.jpg" alt="Gallery Image 5">
+	      
+      </div>
+    </div>
+
+    <div class="gallery-caption">Our kitchen in action — freshness, flavor, and finesse!</div>
+  </main>
+
+  <footer>
+    <p>© 2025 Eatopia Cloud Kitchen | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
